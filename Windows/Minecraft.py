@@ -1,5 +1,6 @@
 # Colton Aubrey Hooke (seshormerow)
-# Minecraft directory finder
+# Minecraft mod directory finder
+# Windows
 
 import os
 
@@ -8,8 +9,9 @@ def main():
         user_dir = "C:" + os.getenv('HOMEPATH') + "\\AppData\\Roaming\\"
     except TypeError:
         user_dir = "C:" + os.getenv('HOME') + "\\AppData\\Roaming\\"
+    
     if os.path.exists(user_dir + "Minecraft") == True:
-        return (user_dir + "Minecraft\\mods")
+        print (user_dir + "Minecraft\\mods")
     else:
         return 0
 main()
