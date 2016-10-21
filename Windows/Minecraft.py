@@ -1,4 +1,3 @@
-# Colton Aubrey Hooke (seshormerow)
 # Minecraft mod directory finder
 # Windows
 
