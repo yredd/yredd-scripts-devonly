@@ -9,8 +9,8 @@ def main():
     except TypeError:
         user_dir = "C:" + os.getenv('HOME') + "\\AppData\\Roaming\\"
     
-    if os.path.exists(user_dir + "Minecraft") == True:
-        print (user_dir + "Minecraft\\mods")
+    if os.path.exists(user_dir + ".minecraft") == True:
+        print (user_dir + ".minecraft\\mods")
     else:
         return 0
 main()
